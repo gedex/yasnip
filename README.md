@@ -10,13 +10,17 @@ The pastebin-like idea is still the same:
 
 Here, nerve is replaced with express and redis-node-client is replaced with node_redis.
 
-## Running Snip
+## Running YASnip
 
-Install dependencies in package.json:
-    npm install
+Make sure pygmentize is available in your PATH. Install dependencies in package.json:
+````bash
+npm install
+````
 
-Run the app:
-   node app.js
+Run the YASnip:
+````js
+node app.js
+````
 
 ## LICENSE - "MIT License"
 
