@@ -1,0 +1,13 @@
+extends layout
+block content
+    form(action="/add", method="post")
+        label(for="code") Paste code
+        br
+        textarea(name="snip", rows="25", cols="80")
+        br
+        label(for="lang") Language
+        select(name="lang")
+            each lang in langs
+                option(value="#{lang[0]}") #{lang[1]}
+        br
+        input(type="submit", value="Save")
