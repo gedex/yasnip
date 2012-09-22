@@ -22,6 +22,12 @@ Run the YASnip:
 node app.js
 ````
 
+## Todo
+
+* Use js-or-css syntax-highlighter instead of Pygmentize
+* Index page should list newest/popular snips or just move /add to index
+* Copy/duplicate snip feature
+
 ## LICENSE - "MIT License"
 
 Copyright (c) 2012 Akeda Bagus <admin@gedex.web.id>
