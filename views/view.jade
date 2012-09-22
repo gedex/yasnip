@@ -1,3 +1,6 @@
 extends layout
+block css
+    link(rel="stylesheet", href="/css/code_highlight.css")
 block content
-    p View page id:#{id}
+    div.codehilite
+        | !{snip}
