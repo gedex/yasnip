@@ -37,6 +37,11 @@ app.configure(function() {
     // TODO: use this middleware when config env is `production`
     app.use(function(req, res, next) {
         res.status('404');
+        
+        if (req.is_raw) {
+            res.type('txt').send('Not found');
+            return;
+        }
 
         if (req.accepts('html')) {
             res.render('404', {
@@ -141,6 +146,7 @@ app.get('/view/:id/:format?', function(req, res, next) {
 
     switch(format) {
         case "raw":
+            req.is_raw = true;
             rc.get("raw_snips:id:" + id, function(err, snip) {
                 if (!err && snip) {
                     res.header("Content-Type", "text/plain; charset=utf-8");
