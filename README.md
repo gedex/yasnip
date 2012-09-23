@@ -24,9 +24,15 @@ node app.js
 
 ## Todo
 
-* Use js-or-css syntax-highlighter instead of Pygmentize
+* Show line number from pygmentize
 * Index page should list newest/popular snips or just move /add to index
 * Copy/duplicate snip feature
+* Use config module to evaluate running env
+* Once config is used, app specific feature can be toggled and/or configured
+  in config.js module. Things like comment provision (Disqus, FB Comment, etc),
+  switch from pygmentize command-line to http://pygments.appspot.com/, etc
+* Content negoitation requesting `text/javascript; charset=utf-8` should receive
+  javascript response for embedding (Gist is the best example)
 
 ## LICENSE - "MIT License"
 
