@@ -1,0 +1,9 @@
+extends layout
+block css
+    link(rel="stylesheet", href="/css/error.css")
+block content
+    div.error.e500
+        h1 Server Error 500
+        h2 Error: #{error.message}
+        if settings['verbose errors']
+            pre= error.stack
