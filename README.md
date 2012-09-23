@@ -17,7 +17,7 @@ Make sure pygmentize is available in your PATH. Install dependencies in package.
 npm install
 ````
 
-Run the YASnip:
+Run `redis-server` and then run YASnip:
 ````js
 node app.js
 ````
