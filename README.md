@@ -33,6 +33,13 @@ node app.js
   switch from pygmentize command-line to http://pygments.appspot.com/, etc
 * Content negoitation requesting `text/javascript; charset=utf-8` should receive
   javascript response for embedding (Gist is the best example)
+* YASnip API. References:
+  * http://dpaste.com/api/v1/
+  * http://developer.github.com/v3/gists/
+* YASnip clients. References:
+  * https://github.com/zodman/dpaster
+  * http://www.vim.org/scripts/script.php?script_id=2519
+  * https://github.com/defunkt/gist
 
 ## LICENSE - "MIT License"
 
