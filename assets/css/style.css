@@ -1,0 +1,177 @@
+/**
+ * CSS is courtesy of Hugo Giraudel, http://cssdeck.com/labs/batman-login-form
+ */
+
+* { box-sizing: border-box; padding:0; margin: 0; }
+
+html {
+    background: #EDEBD1;
+    background-image: -webkit-linear-gradient(top, #EDEBD1 0%,#d2dbc5 100%);
+    background-image: -moz-linear-gradient(top, #EDEBD1 0%,#d2dbc5 100%);
+    background-image: linear-gradient(top, #EDEBD1 0%, #d2dbc5 100%);
+    box-shadow: inset 0 0 50px hsla(0,0%,0%,.5);    
+    min-height: 100%;
+}
+
+body {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    color:#efefef;
+    font-size:12px;
+}
+
+form.new {
+    width: 620px;
+    margin: 30px auto;
+    background:#111;
+    border-radius:0.4em;
+    border:1px solid #191919;
+    overflow:hidden;
+    position:relative;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+}
+
+form.new:after {
+    content:"";
+    display:block;
+    position:absolute;
+    height:1px;
+    width:450px;
+    left:20%;
+    background:linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+    background-image: -webkit-linear-gradient(left, #111 0%, #444 20%, #b6b6b8 40%, #444 80%, #111 100%);
+    background-image: -moz-linear-gradient(left, #111 0%, #444 20%, #b6b6b8 40%, #444 80%, #111 100%);
+    top:0;
+}
+
+form.new:before {
+    content:"";
+    display:block;
+    position:absolute;
+    width: 150px;
+    height:10px;
+    border-radius:50%;
+    left:39%;
+    top:-10px;
+    box-shadow: 0 0 15px 0px #fff;
+}
+
+.inset {
+    padding:20px; 
+    border-top:1px solid #19191a;
+}
+
+form.new h1 {
+    font-size:18px;
+    text-shadow:0 1px 0 black;
+    text-align:center;
+    padding:15px 0;
+    border-bottom:1px solid rgba(0,0,0,1);
+    position:relative;
+}
+
+form.new h1:after {
+    content:"";
+    display:block;
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:-38px;
+    left:320px;
+    pointer-events:none;
+    transform:rotate(70deg);
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    background: -webkit-linear-gradient(50deg, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0) 100%);
+    background: -moz-linear-gradient(50deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(50deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 100%);
+}
+
+form.new label {
+    color: #999;
+}
+
+form.new textarea {
+    width:100%;
+    padding:8px 5px;
+    background: -webkit-linear-gradient(#ccc, #fefefe);
+    background: -moz-linear-gradient(#ccc, #fefefe);
+    background:linear-gradient(#ccc, #fefefe);
+    border:1px solid #222;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+    border-radius:0.3em;
+}
+
+.p-container {
+    padding: 5px 0;
+}
+
+.p-container:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.p-container label {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.p-container label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+
+.p-container select[name="lang"] {
+    margin-left: 10px;
+    padding: 5px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+.p-container input[type="submit"] {
+    padding: 5px 20px;
+    border: 1px solid rgba(0,0,0,0.4);
+    text-shadow: 0 -1px  0 rgba(0,0,0,0.4);
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 10px 10px rgba(255,255,255,0.1);
+    -moz-box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 10px 10px rgba(255,255,255,0.1);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 10px 10px rgba(255,255,255,0.1);
+    background: #0184ff;
+    color: white;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
