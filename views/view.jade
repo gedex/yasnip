@@ -3,4 +3,9 @@ block css
     link(rel="stylesheet", href="/css/code_highlight.css")
 block content
     div.codehilite
+        div.toolbars
+            p.info= lang
+            nav.menu
+                a(href="/view/#{id}/raw") View raw
+                a(href="#") Duplicate
         | !{snip}
