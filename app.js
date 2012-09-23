@@ -40,6 +40,13 @@ app.post('/add', function(req, res) {
                     console.log(err);
                 }
             });
+            
+            // Save lang
+            rc.set('lang:id:' + id, req.param('lang', 'html'), function(err, reply) {
+                if (err) {
+                    console.log(err);
+                }
+            });
 
             var out = "";
             // Spawn pygmentize and save the result via set
@@ -103,9 +110,16 @@ app.get('/view/:id/:format?', function(req, res) {
         default:
             rc.get("snips:id:" + id, function(err, snip) {
                 if (!err) {
-                    res.render('view', {
-                        id: id
-                        , snip: JSON.parse(snip)
+                    rc.get("lang:id:" + id, function(err, repl) {
+                        var lang = "Unknown";
+                        if (!err) {
+                            lang = langs.lang_by_shortcode(repl)[1];
+                        }
+                        res.render('view', {
+                            id: id
+                            , snip: JSON.parse(snip)
+                            , lang: lang
+                        });
                     });
                 } else {
                     // TODO: give 404 page, unable to find snip with given id
