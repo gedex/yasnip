@@ -12,13 +12,18 @@ html {
     box-shadow: inset 0 0 50px hsla(0,0%,0%,.5);    
     min-height: 100%;
 }
-
 body {
     font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     color:#efefef;
     font-size:12px;
 }
-
+a {
+    color:#0d93ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 form.new {
     width: 620px;
     margin: 30px auto;
@@ -29,7 +34,6 @@ form.new {
     position:relative;
     box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
 }
-
 form.new:after {
     content:"";
     display:block;
@@ -54,14 +58,6 @@ form.new:before {
     top:-10px;
     box-shadow: 0 0 15px 0px #fff;
 }
-a {
-    color:#0d93ff;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-
 .inset {
     padding:20px; 
     border-top:1px solid #19191a;
@@ -75,7 +71,6 @@ form.new h1 {
     border-bottom:1px solid rgba(0,0,0,1);
     position:relative;
 }
-
 form.new h1:after {
     content:"";
     display:block;
@@ -92,11 +87,9 @@ form.new h1:after {
     background: -moz-linear-gradient(50deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 100%);
     background: linear-gradient(50deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 100%);
 }
-
 form.new label {
     color: #999;
 }
-
 form.new textarea {
     width:100%;
     padding:8px 5px;
@@ -107,23 +100,19 @@ form.new textarea {
     box-shadow: 0 1px 0 rgba(255,255,255,0.1);
     border-radius:0.3em;
 }
-
 .p-container {
     padding: 5px 0;
 }
-
 .p-container:after {
     clear: both;
     display: table;
     content: "";
 }
-
 .p-container label {
     position: relative;
     display: block;
     float: left;
 }
-
 .p-container label:after {
     content:'<>';
     font:11px "Consolas", monospace;
@@ -138,7 +127,6 @@ form.new textarea {
     position:absolute;
     pointer-events:none;
 }
-
 .p-container select[name="lang"] {
     margin-left: 10px;
     padding: 5px;
@@ -158,7 +146,6 @@ form.new textarea {
     appearance:none;
     cursor:pointer;
 }
-
 .p-container input[type="submit"] {
     padding: 5px 20px;
     border: 1px solid rgba(0,0,0,0.4);
@@ -182,7 +169,6 @@ form.new textarea {
     cursor: pointer;
     font-size: 13px;
 }
-
 footer {
     width: 620px;
     margin: 30px auto;
