@@ -1,13 +1,3 @@
 extends layout
 block content
-    form(action="/add", method="post", class="new")
-        h1 Yo! Paste Ya Snippet Below
-        div.inset
-            p
-                textarea(name="snip", rows="25", cols="80")
-            p.p-container
-                label(for="lang") Language:
-                    select(name="lang")
-                        each lang in langs
-                            option(value="#{lang[0]}") #{lang[1]}
-                input(type="submit", value="Save")
+    include elements/new_snip
