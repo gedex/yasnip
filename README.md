@@ -25,7 +25,9 @@ node app.js
 ## Todo
 
 * Show line number from pygmentize
-* Index page should list newest/popular snips or just move /add to index
+* Save creation datetime
+* Index page should list newest/popular snips. Require creation datetime to be saved (see above)
+* Use hash to store snip and its attributes. Use HMSET and HMGET to set and retrieve the hash
 * Copy/duplicate snip feature
 * Use config module to evaluate running env
 * Once config is used, app specific feature can be toggled and/or configured
