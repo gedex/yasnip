@@ -54,6 +54,13 @@ form.new:before {
     top:-10px;
     box-shadow: 0 0 15px 0px #fff;
 }
+a {
+    color:#0d93ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 .inset {
     padding:20px; 
@@ -174,4 +181,13 @@ form.new textarea {
     font-weight: bold;
     cursor: pointer;
     font-size: 13px;
+}
+
+footer {
+    width: 620px;
+    margin: 30px auto;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
 }
