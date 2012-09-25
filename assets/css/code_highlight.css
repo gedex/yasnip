@@ -49,15 +49,10 @@
     float: right;
 }
 .codehilite .toolbars .menu a {
-    color:#0d93ff;
-    text-decoration: none;
     padding-left: 15px;
 }
 .codehilite .toolbars .menu a:first-child {
     padding-left: 0;
-}
-.codehilite .toolbars .menu a:hover {
-    text-decoration: underline;
 }
 .codehilite pre {
     font-family: 'Monaco', 'Menlo', monospace;
